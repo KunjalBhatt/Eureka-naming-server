@@ -19,9 +19,9 @@ pipeline {
 			steps {
 			
 				withMaven(maven : 'maven_3_8_1'){
-				
-					sh 'mvn test'
-				 
+				sh '''#!/bin/bash
+                  	mvn test
+         			'''
 				}
 				
 			}
